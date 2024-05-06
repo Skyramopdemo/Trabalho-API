@@ -18,10 +18,10 @@
                 <option value="" selected disabled style="display: none;"> </option>
                 <option value="carros">Carro</option>
                 <option value="motos">Moto</option>
-                <option value="caminhaos">Caminhão</option>
+                <option value="caminhoes">Caminhão</option>
             </select>
             
-            <button type="button">Buscar Veículos</button>
+            <button type="button" onclick="searchAPI('marca', 2)">Buscar Veículos</button>
         </div>        
         
         <div class="mb-3 marca_div" hidden>
@@ -32,7 +32,7 @@
             </select>        
 
 
-            <button type="button">Buscar Modelo</button> 
+            <button type="button" onclick="searchAPI('modelo', 3)">Buscar Modelo</button> 
         </div>        
 
 
@@ -43,7 +43,7 @@
                 <option value="" selected disabled style="display: none;"> </option>
             </select>        
 
-            <button type="button">Buscar Ano</button>
+            <button type="button" onclick="searchAPI('ano', 4)">Buscar Ano</button>
 
         </div>    
         
@@ -54,7 +54,7 @@
                 <option value="" selected disabled style="display: none;"> </option>
             </select>        
 
-            <button type="button">Buscar Detalhes</button>
+            <button type="button" onclick="searchAPI('detalhes')">Buscar Detalhes</button>
         </div>        
 
         <div class="mb-3 detalhes_div" hidden>
@@ -65,6 +65,6 @@
         </div>
 
     </div>
-
+    <script src="./Js/main.js"></script>
 </body>
 </html>
